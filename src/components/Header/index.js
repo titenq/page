@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header className={styles.navbar}>
       <div className={styles.avatar}>
-        <img src="img/avatar.jpeg" alt="TitenQ avatar"/>
+        <img src="/img/avatar.jpeg" alt="TitenQ avatar"/>
       </div>
       <ul className={`${styles.links} ${isOpen ? styles.links_on : ''}`}>
         {links.map((link, index) => {
