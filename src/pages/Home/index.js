@@ -20,11 +20,11 @@ const Home = () => {
       </div>
                     
       <div className={styles.clouds}>
-        <img src="/img/cloud1.png" style={{ "--i": 1 }} alt="cloud" />
-        <img src="/img/cloud2.png" style={{ "--i": 2 }} alt="cloud" />
-        <img src="/img/cloud3.png" style={{ "--i": 3 }} alt="cloud" />
-        <img src="/img/cloud4.png" style={{ "--i": 4 }} alt="cloud" />
-        <img src="/img/cloud5.png" style={{ "--i": 5 }} alt="cloud" />
+        <img src="/page/img/cloud1.png" style={{ "--i": 1 }} alt="cloud" />
+        <img src="/page/img/cloud2.png" style={{ "--i": 2 }} alt="cloud" />
+        <img src="/page/img/cloud3.png" style={{ "--i": 3 }} alt="cloud" />
+        <img src="/page/img/cloud4.png" style={{ "--i": 4 }} alt="cloud" />
+        <img src="/page/img/cloud5.png" style={{ "--i": 5 }} alt="cloud" />
       </div>
     </div>
   );
