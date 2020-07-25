@@ -4,25 +4,25 @@ import styles from './Tecnologias.module.css';
 
 const imgs = [
   {
-    src: '/img/html-css-javascript.png',
+    src: '/page/img/html-css-javascript.png',
     alt: 'HTML, CSS, JavaScript'
   },
   {
-    src: '/img/react-angular-typescript.png',
+    src: '/page/img/react-angular-typescript.png',
     alt: 'React, Angular, TypeScript'
   },
   {
-    src: '/img/node-express-next.png',
+    src: '/page/img/node-express-next.png',
     alt: 'NodeJS, Express, NextJS, REST API, GraphQL'
   },
   {
-    src: '/img/mongodb-mysql.png',
+    src: '/page/img/mongodb-mysql.png',
     alt: 'MongoDB, MySQL, PostgreSQL, Firebase'
   }
 ];
 
 const Tecnologias = () => {
-  const [src, setSrc] = useState('/img/html-css-javascript.png');
+  const [src, setSrc] = useState('/page/img/html-css-javascript.png');
 
   const changeThumb = src => {
     setSrc(src);
@@ -34,7 +34,7 @@ const Tecnologias = () => {
         <h1>Tecnologias</h1>
         <div className={styles.tecnologias_container}>
           <figure className={styles.monitor_container}>
-            <img className={styles.monitor} src="/img/monitor.jpeg" alt="Monitor" />
+            <img className={styles.monitor} src="/page/img/monitor.jpeg" alt="Monitor" />
             <img className={styles.monitor_content} src={src} alt="HTML, CSS, JavaScript" />
           </figure>
           <figure className={styles.thumbs}>

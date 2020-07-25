@@ -5,37 +5,37 @@ import styles from './Portfolio.module.css';
 const links = [
   {
     href: 'https://www.npmjs.com/package/menj',
-    src: '/img/menj.png',
+    src: '/page/img/menj.png',
     alt: 'MENJ'
   },
   {
     href: 'https://marketplace.visualstudio.com/items?itemName=titenq.import-font',
-    src: '/img/import-font.png',
+    src: '/page/img/import-font.png',
     alt: 'Import Font'
   },
   {
     href: 'https://opinae.vercel.app/',
-    src: '/img/opinae.png',
+    src: '/page/img/opinae.png',
     alt: 'Opinaê'
   },
   {
     href: 'https://titenq.github.io/frases/',
-    src: '/img/frases.jpg',
+    src: '/page/img/frases.jpg',
     alt: 'Frases'
   },
   {
     href: 'https://titenq.github.io/cartoon-memory-game/',
-    src: '/img/memory-game.jpg',
+    src: '/page/img/memory-game.jpg',
     alt: 'Cartoon Memory Game'
   },
   {
     href: 'https://titenq.github.io/gematria/',
-    src: '/img/gematria.jpg',
+    src: '/page/img/gematria.jpg',
     alt: 'Gematria'
   },
   {
     href: 'https://titenq.github.io/circle-progress-stats/',
-    src: '/img/circle-progress-stats.png',
+    src: '/page/img/circle-progress-stats.png',
     alt: 'Circle Progress Stats'
   }
 ];
