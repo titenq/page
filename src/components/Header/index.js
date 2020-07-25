@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import styles from './Header.module.css';
+import avatar from '../../assets/img/avatar.jpeg'
 
 const links = [
   {
@@ -33,7 +34,7 @@ const Header = () => {
   return (
     <header className={styles.navbar}>
       <div className={styles.avatar}>
-        <img src="/page/img/avatar.jpeg" alt="TitenQ avatar"/>
+        <img src={avatar} alt="TitenQ avatar" />
       </div>
       <ul className={`${styles.links} ${isOpen ? styles.links_on : ''}`}>
         {links.map((link, index) => {

@@ -1,6 +1,11 @@
 import React from 'react';
 
 import styles from './Home.module.css';
+import cloud1 from '../../assets/img/cloud1.png';
+import cloud2 from '../../assets/img/cloud2.png';
+import cloud3 from '../../assets/img/cloud3.png';
+import cloud4 from '../../assets/img/cloud4.png';
+import cloud5 from '../../assets/img/cloud5.png';
 
 const Home = () => {
   return (
@@ -20,11 +25,11 @@ const Home = () => {
       </div>
                     
       <div className={styles.clouds}>
-        <img src="/page/img/cloud1.png" style={{ "--i": 1 }} alt="cloud" />
-        <img src="/page/img/cloud2.png" style={{ "--i": 2 }} alt="cloud" />
-        <img src="/page/img/cloud3.png" style={{ "--i": 3 }} alt="cloud" />
-        <img src="/page/img/cloud4.png" style={{ "--i": 4 }} alt="cloud" />
-        <img src="/page/img/cloud5.png" style={{ "--i": 5 }} alt="cloud" />
+        <img src={cloud1} style={{ "--i": 1 }} alt="cloud" />
+        <img src={cloud2} style={{ "--i": 2 }} alt="cloud" />
+        <img src={cloud3} style={{ "--i": 3 }} alt="cloud" />
+        <img src={cloud4} style={{ "--i": 4 }} alt="cloud" />
+        <img src={cloud5} style={{ "--i": 5 }} alt="cloud" />
       </div>
     </div>
   );

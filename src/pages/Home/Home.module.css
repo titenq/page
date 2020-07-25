@@ -103,7 +103,7 @@ body {
   width: 100%;
   height: 100vh;
   margin-top: 80px;
-  background: url("/page/img/rio-de-janeiro-night.jpg");
+  background: url("../../assets/img/rio-de-janeiro-night.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
