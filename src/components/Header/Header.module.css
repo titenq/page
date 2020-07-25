@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #212121;
+  color: #fff;
+  border-bottom: 1px solid #212121;
+  box-shadow: 0 0 4px #fff;
+  z-index: 999;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+.avatar img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.color_animate {
+  background: linear-gradient(to right, #fff 50%, #d500f9 50%, #e00849);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s ease;
+}
+
+.color_animate:hover {
+  background-position: -100%;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  top: 15px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_hamburger {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_hamburger::before,
+.btn_hamburger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_hamburger::before {
+  transform: translateY(-12px);
+}
+
+.btn_hamburger::after {
+  transform: translateY(12px);
+}
+
+.open .btn_hamburger {
+  transform: translateX(-50px);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.open .btn_hamburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  box-shadow: none;
+}
+
+.open .btn_hamburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  box-shadow: none;
+}
+
+@media screen and (max-width: 650px) {
+  .hamburger {
+    display: inline-block; 
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    right: 0;
+    background-color: #212121;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .links_on {
+    transform: translateX(0);
+  }
+
+  .color_animate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+.section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section_container h1 {
+  margin: 30px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.tecnologias_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.monitor_container,
+.monitor {
+  width: 300px;
+}
+
+.monitor_container {
+  height: 250px;
+}
+
+.monitor_content {
+  position: relative;
+  top: -230px;
+  left: 25px;
+  width: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.thumbs img {
+  margin: 10px 5px;
+  width: 100px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.5);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.thumbs img:hover {
+  filter: grayscale();
+  transform: scale(1.2);
+}
