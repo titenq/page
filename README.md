@@ -5,7 +5,7 @@
 Front-end feito em React com CSS Modules.
 
 ### Demo
-[https://titenq.github.io/page](https://titenq.github.io/page "https://titenq.github.io/page")
+[https://titenq.netlify.app/](https://titenq.netlify.app/ "https://titenq.netlify.app/")
 
 ### Tecnologias
 - React
