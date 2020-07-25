@@ -1,18 +1,9 @@
-.container {
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  background-color: #37495F;
-  color: #fff;
-}
-
 .section_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
-  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .section_container h1 {
@@ -21,34 +12,87 @@
   font-weight: 800;
 }
 
-.portfolio_container figure {
+section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transform-style: preserve-3d;
 }
 
-.portfolio_frame {
-  background: #212121;
-  border: solid #fff;
-  border-width: 10px 10px 30px 10px;
-  width: 200px;
-  height: 150px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
-
-.portfolio_frame:hover {
-  transform: scale(1.1);
-}
-
-.portfolio_container figcaption {
-  text-align: center;
+.card {
   position: relative;
-  top: -27px;
-  color: #000;
+  width: 260px;
+  height: 200px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
-.portfolio_container a {
-  text-decoration: none;
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.card:hover .box {
+  transform: rotateY(180deg);
+}
+
+.img_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img_box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.content_box div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(45deg, #d50000, #ffff00);
+  transform: translateZ(100px);
+}
+
+.content_box div h2 {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px #fff;
+  margin-bottom: 10px;
+}
+
+.content_box div p {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px #333;
 }
