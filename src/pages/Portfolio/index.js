@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './Portfolio.module.css';
+import devflix from '../../assets/img/devflix.jpg';
 import menj from '../../assets/img/menj.png';
 import importFont from '../../assets/img/import-font.png';
 import opinae from '../../assets/img/opinae.png';
@@ -10,6 +11,12 @@ import gematria from '../../assets/img/gematria.jpg';
 import circleProgress from '../../assets/img/circle-progress-stats.png';
 
 const links = [
+  {
+    href: 'https://devflix.titenq.vercel.app/',
+    src: devflix,
+    alt: 'DEVFLIX',
+    caption: 'Vídeos para desenvolvedores e programadores'
+  },
   {
     href: 'https://www.npmjs.com/package/menj',
     src: menj,
