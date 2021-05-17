@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AiFillGithub, AiFillTwitterCircle, AiFillGoogleCircle } from 'react-icons/ai';
-import { FaTelegram } from 'react-icons/fa';
+import { FaTelegram, FaLinkedin } from 'react-icons/fa';
 
 import styles from './Contatos.module.css';
 
@@ -25,6 +25,11 @@ const contatos = [
     href: 'mailto:titenq@gmail.com?subject=Oi,%20TitenQ',
     class: styles.gmail,
     icon: <AiFillGoogleCircle className={styles.icon} />
+  },
+  {
+    href: 'https://www.linkedin.com/in/titenq/',
+    class: styles.linkedIn,
+    icon: <FaLinkedin className={styles.icon} />
   },
 ];
 

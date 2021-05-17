@@ -9,6 +9,7 @@ import frases from '../../assets/img/frases.jpg';
 import memoryGame from '../../assets/img/memory-game.jpg';
 import gematria from '../../assets/img/gematria.jpg';
 import circleProgress from '../../assets/img/circle-progress-stats.png';
+import jsExamples from '../../assets/img/js-examples.jpg';
 
 const links = [
   {
@@ -58,6 +59,12 @@ const links = [
     src: circleProgress,
     alt: 'Circle Progress Stats',
     caption: 'Estatísticas com progresso em gráfico circular extraídos automaticamente de um objeto.'
+  },
+  {
+    href: 'https://marketplace.visualstudio.com/items?itemName=titenq.js-examples',
+    src: jsExamples,
+    alt: 'JS Examples',
+    caption: 'Javascript snippets for VS Code with code examples.'
   }
 ];
 
